@@ -34,7 +34,7 @@
             var headerCells = rows[0].cells;
             // start with 1, first upper-left cell is empty!
             for (var i = 1; i < headerCells.length; i++) {
-                vRegexes.push([headerCells[i].innerText.replace(/\n/, "")]);
+                vRegexes.push([ $(headerCells[i]).text() ]);
             }
 
             var footerCells = rows[rows.length - 1].cells;
@@ -42,20 +42,20 @@
             // (note that there is always an empty <td>, therefore >1!)
             if (footerCells.length > 1) {
                 for (var i = 1; i < footerCells.length; i++) {
-                    vRegexes[i - 1].push(footerCells[i].innerText.replace(/\n/, ""));
+                    vRegexes[i - 1].push( $(footerCells[i]).text() );
                 }
             }
 
             // iterate all rows except header and footer ones
             for (var y = 1; y < rows.length - 1; y++) {
-                hRegexes.push([rows[y].cells[0].innerText]);
+                hRegexes.push([ $(rows[y].cells[0]).text() ]);
                 hTexts.push("");
 
                 for (var x = 1; x < rows[y].cells.length; x++) {
                     var cell = rows[y].cells[x];
                     // another hRegex
                     if (x == rows[y].cells.length - 1 && $(cell).find("input").length === 0) {
-                        hRegexes[y - 1].push(cell.innerText);
+                        hRegexes[y - 1].push( $(cell).text() );
                     } else {
                         hTexts[y - 1] += $(cell).find("input").val();
                         if (typeof vTexts[x - 1] === "undefined") {
