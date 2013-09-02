@@ -25,7 +25,7 @@
         (window.myBookmarklet = function () {
             var $ = jQuery;
             $.noConflict();
-            var rows = $("div.puzzle table").rows;
+            var rows = $("div.puzzle table")[0].rows;
             var vRegexes = [];
             var hRegexes = [];
             var hTexts = [];
