@@ -1,4 +1,11 @@
-Creating your bookmarklet
+What's this?
+===============
+Do you know http://regexcrossword.com/ ? If so, this bookmarklet will definitely help you solving all puzzles!
+
+This bookmarklet shows all mistakes made in the crossword including detailed information about which row, column or regular expression were affected.
+
+
+Setup
 ===========================
 Drag the link below onto your bookmark's bar:
 [Regex-CW-Helper](http://www.google.de)
