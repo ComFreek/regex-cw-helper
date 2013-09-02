@@ -7,7 +7,7 @@ This bookmarklet shows all mistakes made in the crossword including detailed inf
 
 Setup
 ===========================
-Drag the link below onto your bookmark's bar:
+Drag the following link onto your bookmark's bar:
 [Regex-CW-Helper](http://www.google.de)
 
 Now, open [`bookmarklet.min.js`](https://raw.github.com/ComFreek/regex-cw-helper/master/bookmarklet.min.js) and copy all contents.
