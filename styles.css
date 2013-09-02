@@ -2,5 +2,5 @@
 /* @TODO Consider using SASS for CSS namespaces */
 
 .rch-wrong-row td {
-    background-color: red;
+    border: thin dotted red;
 }
