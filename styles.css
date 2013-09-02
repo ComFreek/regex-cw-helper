@@ -1,0 +1,6 @@
+/* rch, short for Regex-Cw-Helper (cw = crossword by the way) */
+/* @TODO Consider using SASS for CSS namespaces */
+
+.rch-wrong-row td {
+    background-color: red;
+}
