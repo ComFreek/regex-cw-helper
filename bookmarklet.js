@@ -71,7 +71,7 @@
 
             for (var x = 0; x < vRegexes.length; x++) {
                 for (var r = 0; r < vRegexes[x].length; r++) {
-                    var re = new RegExp(vRegexes[x][r]);
+                    var re = new RegExp("^" + vRegexes[x][r] + "$");
                     if (!re.test(vTexts[x])) {
                         errors += "Column " + (x + 1) + " (" + (r == 0 ? "1st" : "2nd") + " regexp) \n";
                     }
