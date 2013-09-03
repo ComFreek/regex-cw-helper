@@ -85,7 +85,7 @@
 
             for (var y = 0; y < hRegexes.length; y++) {
                 for (var r = 0; r < hRegexes[y].length; r++) {
-                    var re = new RegExp(hRegexes[y][r]);
+                    var re = new RegExp("^" + hRegexes[y][r] + "$");
                     if (!re.test(hTexts[y])) {
                         errors += "Row " + (y + 1) + " (" + (r == 0 ? "1st" : "2nd") + " regexp) \n";
                     }
