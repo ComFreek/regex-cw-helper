@@ -19,7 +19,7 @@ Compatibility
 ===========================
 Tested with
 
-- Google Chrome
+- Google Chrome (including Chromium)
 - Mozilla Firefox
 
 
