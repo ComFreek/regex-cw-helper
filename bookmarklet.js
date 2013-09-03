@@ -1,6 +1,7 @@
 /**
  * MIT License, see 'LICENSE' file.
  * @author ComFreek <comfreek@outlook.com>
+ * @todo Refactor the code (esp. DRY)! The current code base was only kind of hacked together :D
  */ (function () {
     // the minimum version of jQuery we want
     var v = "2.0.3";
